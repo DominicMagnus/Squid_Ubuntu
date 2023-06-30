@@ -1,0 +1,8 @@
+sudo apt update
+sudo apt install squid
+sudo nano /etc/squid/squid.conf
+  add 
+  http_access allow all
+sudo systemctl restart squid
+sudo systemctl status squid
+sudo systemctl enable squid
